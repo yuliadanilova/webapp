@@ -1,0 +1,17 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <g:HTMLPanel>
+        <div align="center">
+            <g:SuggestBox ui:field='suggestBox'/>
+            <g:Button ui:field="search">Search</g:Button>
+        </div>
+        <!--<g:Button ui:field="clear">Clear</g:Button>-->
+        <g:Button ui:field="clearAll">ClearAll</g:Button>
+        <g:Button ui:field="addButton">Add</g:Button>
+        <g:HTMLPanel ui:field="content"/>
+
+        <g:DialogBox ui:field="searchDialog" autoHide="true" modal="true" visible="false">
+            <g:Button ui:field="cancel">Отмена</g:Button>
+        </g:DialogBox>
+    </g:HTMLPanel>
+</ui:UiBinder>

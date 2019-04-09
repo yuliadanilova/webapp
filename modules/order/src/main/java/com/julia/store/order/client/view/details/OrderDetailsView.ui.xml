@@ -1,0 +1,41 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <g:HTMLPanel>
+        <div ui:field="content"/>
+        <g:DialogBox ui:field="itemDialog" autoHide="true" modal="true" visible="false">
+            <g:HTMLPanel>
+                <table>
+                    <tr>
+                        <td>Имя пользователя</td>
+                        <td>
+                            <g:TextBox ui:field="userName" enabled="true"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Дата</td>
+                        <td>
+                            <g:TextBox ui:field="dateInput" enabled="true"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Цена</td>
+                        <td>
+                            <g:TextBox ui:field="priceInput" enabled="true"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Количество</td>
+                        <td>
+                            <g:TextBox ui:field="countInput" enabled="true"/>
+                        </td>
+                    </tr>
+                    <g:Button ui:field="save" visible="false">Save</g:Button>
+                    <g:Button ui:field="cancel" visible="false">Cancel</g:Button>
+                    <g:Button ui:field="edit" visible="false">Edit</g:Button>
+                    <g:Button ui:field="cancelSearch" visible="false">Cancel</g:Button>
+                    <g:Button ui:field="apply" visible="false">Apply</g:Button>
+                </table>
+            </g:HTMLPanel>
+        </g:DialogBox>
+    </g:HTMLPanel>
+</ui:UiBinder>

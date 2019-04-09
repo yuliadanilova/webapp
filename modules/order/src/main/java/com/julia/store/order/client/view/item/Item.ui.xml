@@ -1,0 +1,32 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:G="urn:import:com.google.gwt.user.client.ui">
+    <g:HTMLPanel>
+
+        <style>
+            .title {
+            padding-left: 20px;
+            font-size: 150%;
+            font-weight: normal;
+            }
+            .done {
+            text-decoration: line-through;
+            }
+            .paper-checkbox {
+            top: -2px;
+            }
+        </style>
+
+        <g:FocusPanel ui:field="root" styleName="item vertical center-justified layout">
+
+            <g:HTMLPanel styleName="vertical-section">
+                <g:InlineLabel ui:field="orderId"/>
+                <g:InlineLabel ui:field="user"/>
+                <g:InlineLabel ui:field="date"/>
+                <g:InlineLabel ui:field="product"/>
+                <g:InlineLabel ui:field="amount"/>
+            </g:HTMLPanel>
+
+        </g:FocusPanel>
+
+    </g:HTMLPanel>
+</ui:UiBinder>
